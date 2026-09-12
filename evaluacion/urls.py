@@ -22,4 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('vista3/', views.vista_tres),
     path('vista4/', views.vista_cuatro),
+from aplicacion1 import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('vista1/', views.vista_uno),
+    path('vista2/', views.vista_dos),
 ]
